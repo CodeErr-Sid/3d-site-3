@@ -214,7 +214,7 @@ html {
 body {
     margin: 0;
     background-color: var(--mainBackground);
-    font-family: dm sans, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--mainColor)
 }
 
@@ -289,7 +289,7 @@ hr {
 }
 
 pre {
-    font-family: monospace, monospace;
+    font-family: "Montserrat", sans-serif;
     font-size: 1em
 }
 
@@ -317,7 +317,7 @@ strong {
 code,
 kbd,
 samp {
-    font-family: monospace, monospace;
+    font-family: "Montserrat", sans-serif;
     font-size: 1em
 }
 
@@ -517,7 +517,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: inherit;
+    font-family: "Montserrat", sans-serif;
     font-size: 100%;
     line-height: 1.15;
     margin: 0
@@ -652,7 +652,7 @@ template {
 }
 
 .material-icons {
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
@@ -896,7 +896,6 @@ div#content {
 
 .section {
     width: 100%;
-    margin-bottom: 100px;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -2852,7 +2851,7 @@ div#mouseCursor .mouse-cursor-icon {
 
 div#mouseCursor .mouse-cursor-icon::after {
     content: attr(data-icon);
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     opacity: 0;
     -webkit-transition: opacity .3s ease;
     -o-transition: opacity .3s ease;
@@ -2874,7 +2873,7 @@ div#mouseCursor .multi-icon {
 
 div#mouseCursor .multi-icon::after {
     content: 'arrow_forward';
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 50%;
     right: 0;
@@ -2886,7 +2885,7 @@ div#mouseCursor .multi-icon::after {
 
 div#mouseCursor .multi-icon::before {
     content: 'arrow_back';
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 50%;
     left: 0;
@@ -4171,7 +4170,7 @@ span.g-list-arrow {
 
 .grid-project-category span::after {
     content: 'arrow_outward';
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 100%;
     right: 0
@@ -4288,7 +4287,7 @@ span.g-list-arrow {
 
 .hover-arrow .grid-project::after {
     content: 'arrow_outward';
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 50px;
     right: 50px;
@@ -8748,7 +8747,7 @@ ul.nayla-awards-list li a span:last-child {
 
 .nayla-heading.icon-right>*::after {
     content: attr(data-icon);
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     font-size: .5em;
     vertical-align: middle;
     display: inline-block;
@@ -8760,7 +8759,7 @@ ul.nayla-awards-list li a span:last-child {
 .nayla-heading.icon-block>*::before,
 .nayla-heading.icon-left>*::before {
     content: attr(data-icon);
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     font-size: .5em;
     vertical-align: middle;
     display: inline-block;
@@ -9652,7 +9651,7 @@ ul.menu.social-menu li a {
 
 ul.menu.social-menu li a::after {
     content: 'arrow_outward';
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     text-align: right;
     display: inline-block;
     vertical-align: bottom;
@@ -9985,7 +9984,7 @@ ul.menu.social-menu li a::after {
 .nayla-button.underline.icon-left::before,
 .nayla-button.underline.icon-left::after {
     content: attr(data-icon);
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 50%;
     left: 0;
@@ -10001,7 +10000,7 @@ ul.menu.social-menu li a::after {
 .nayla-button.underline.icon-right::before,
 .nayla-button.underline.icon-right::after {
     content: attr(data-icon);
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 50%;
     right: 0;
@@ -10164,7 +10163,7 @@ ul.menu.social-menu li a::after {
 .nayla-button.outline.icon-right::after,
 .nayla-button.outline.icon-right::before {
     content: attr(data-icon);
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 50%;
     right: 0;
@@ -10183,7 +10182,7 @@ ul.menu.social-menu li a::after {
 .nayla-button.outline.icon-left::after,
 .nayla-button.outline.icon-left::before {
     content: attr(data-icon);
-    font-family: material icons;
+    font-family: "Montserrat", sans-serif;
     position: absolute;
     top: 50%;
     left: 0;
@@ -12395,5 +12394,193 @@ span.test-prev::after {
         margin-top: 150px;
         left: 0;
         padding: 0
+    }
+}
+
+
+/* siddique */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sid-container {
+    height: 75vh; /* Changed from 100vh to 75vh */
+    /* padding: 20px; */
+    border-radius: 10px;
+    background: none;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* margin: 50px auto; */
+    overflow: hidden; 
+}
+
+.sid-container.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.sid-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 1s ease, transform 1s ease;
+    opacity: 0;
+    transform: translateY(0);
+    overflow: auto; /* Enable scrolling within sections */
+}
+
+.sid-section::-webkit-scrollbar {
+    display: none; 
+}
+
+.sid-section.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.sid-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    transition: transform 2s ease;
+}
+
+.content.left {
+    background-color: #d4d3ff;
+    padding: 20px;
+    transform: translateY(-100%);
+}
+
+.content.right {
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sid-section.active .content.left,
+.sid-section.show .content.left {
+    transform: translateY(0);
+}
+
+.sid-section.active .content.right,
+.sid-section.show .content.right {
+    transform: translateY(0);
+}
+
+.content.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 0 10px 10px 0; */
+}
+
+
+.content.left {
+    background-color: #d4d3ff;
+    padding: 20px;
+    transform: translateY(-100%);
+    transition: transform 1s ease;
+}
+
+.content.right {
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 1s ease;
+}
+
+.sid-section.active .content.left,
+.sid-section.show .content.left {
+    transform: translateY(0);
+}
+
+.sid-section.active .content.right,
+.sid-section.show .content.right {
+    transform: translateY(0);
+}
+
+
+/*  */
+
+@media (max-width: 1200px) {
+    .sid-container {
+        width: 90%;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content.right img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .sid-container {
+        width: 95%;
+    }
+
+    .content {
+        padding: 0px;
+    }
+
+    .content.right img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sid-container {
+        width: 100%;
+        /* padding: 10px; */
+    }
+
+    .content {
+        padding: 0px;
+    }
+
+    .content.right img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sid-section {
+        flex-direction: column;
+    }
+
+    .content.left,
+    .content.right {
+        width: 100%;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 576px) {
+    .content.right img {
+        width: 100%;
+        height: 100%;
+    }
+
+    a {
+        padding: 8px 16px;
     }
 }
