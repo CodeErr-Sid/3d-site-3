@@ -12,10 +12,14 @@ a {
   text-decoration: none;
 }
 
+
 /* Sections */
 .section {
   height: 100vh;
   min-height: 500px;
+  position: relative;
+}
+.section-zm {
   position: relative;
 }
 

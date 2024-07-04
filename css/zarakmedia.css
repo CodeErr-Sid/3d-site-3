@@ -569,7 +569,7 @@ video {
     border: 1px solid var(--color-dark-mode-gray-2) !important;
 }
 
-.border-white{
+.border-white {
     border: 1px solid white;
 }
 
@@ -792,7 +792,7 @@ video {
 /* contact us */
 #name::placeholder,
 #email::placeholder,
-#message::placeholder{
+#message::placeholder {
     color: white;
 }
 
@@ -2639,11 +2639,21 @@ textarea:-webkit-autofill:focus {
 .form input[type="password"].input-lg,
 .form input[type="date"].input-lg,
 .form input[type="color"].input-lg,
+.form textarea.input-lg,
 .form select.input-lg {
     height: 52.5px;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 16px;
+    background-color: var(--zarak-blue);
+}
+
+.mb-md-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
 }
 
 .form input[type="text"].input-md,
@@ -2790,6 +2800,19 @@ textarea:-webkit-autofill:focus {
     background: var(--bs-danger);
     color: #fff;
     border-radius: var(--border-radius-default);
+}
+
+.submit_btn {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: all .9s ease-in-out;
+}
+
+.submit_btn:hover {
+    background-color: var(--zarak-blue);
+    border: 1px solid white;
+    color: white
 }
 
 .form div.error a,
@@ -5970,7 +5993,7 @@ a.logo:hover {
     display: inline-block;
     padding-bottom: 2px;
     position: relative;
-    color: #171717;
+    color: #fff;
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
