@@ -17,13 +17,13 @@
          }
          textHover('.cursor-text')
          function iconHover(targets) {
-            $(targets).on('mouseenter', function () { let $this = $(this), icon = $this.data('cursor-icon'), lib = $this.data('lib'); icon == null ? icon = 'arrow_outward' : ''; cursorIcon.attr('data-icon', icon); cursorIcon.css({ "font-family": '"' + lib + '"' }); mouseCursor.addClass('hover-size'); mouseCursor.addClass('hover-icon'); })
+            $(targets).on('mouseenter', function () { let $this = $(this), icon = $this.data('cursor-icon'), lib = $this.data('lib'); icon == null ? icon = 'Contact Us' : ''; cursorIcon.attr('data-icon', icon); cursorIcon.css({ "font-family": '"' + lib + '"' }); mouseCursor.addClass('hover-size'); mouseCursor.addClass('hover-icon'); })
             $(targets).on('mouseleave', function () { mouseCursor.removeClass('hover-size'); mouseCursor.removeClass('hover-icon'); })
          }
          iconHover('.cursor-icon, .showcase-carousel .showcase-project a'); mouseCursor.hasClass('dark') ? cursorDark = true : ''; mouseCursor.hasClass('light') ? cursorLight = true : ''; function dragHover(targets) {
             $(targets).on('mouseenter', function (e) { let $this = $(this), winWidth = $(window).outerWidth(); mouseCursor.addClass('hover-size'); mouseCursor.addClass('hover-icon'); })
             $(targets).on('mouseleave', function () { mouseCursor.removeClass('hover-size'); mouseCursor.removeClass('hover-icon'); })
-            $(targets).on('mousemove', function (e) { let $this = $(this), winWidth = $(window).outerWidth(); if (e.clientX < winWidth / 2) { cursorIcon.attr('data-icon', 'arrow_back'); } else { cursorIcon.attr('data-icon', 'arrow_forward'); } })
+            $(targets).on('mousemove', function (e) { let $this = $(this), winWidth = $(window).outerWidth(); if (e.clientX < winWidth / 2) { cursorIcon.attr('data-icon', 'arrow_back'); } else { cursorIcon.attr('data-icon', 'Contact Us'); } })
          }
          dragHover('.drag-hover')
          function zoomHover(targets) {
