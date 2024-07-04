@@ -1,0 +1,297 @@
+.inthisection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+  .main-card {
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vw;
+    box-shadow: 3px 12px 36px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    box-sizing: border-box;
+  }
+
+  .top-cards {
+    display: flex;
+    height: 30%;
+    margin-bottom: 1vw;
+  }
+
+  .left-card {
+    width: 70%;
+    margin-right: 1vw;
+    box-shadow: 3px 12px 36px rgba(0, 0, 0, 0.1);
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+    padding: 1vw;
+  }
+
+  .right-card {
+    width: 30%;
+    box-shadow: 3px 12px 36px rgba(0, 0, 0, 0.1);
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+  }
+
+  .bottom-cards {
+    display: flex;
+    height: 70%;
+  }
+
+  .bottom-card {
+    width: 50%;
+    background-color: #eeeeee;
+    border-radius: 1vw;
+    margin-right: 1vw;
+    box-shadow: 3px 12px 36px rgba(0, 0, 0, 0.1);
+  }
+
+  .bottom-card p {
+    text-align: start;
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin: 2vw;
+    font-family: system-ui;
+  }
+
+  .bottom-card .div {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding-left: 2vw;
+  }
+
+  .div .imgbox {
+    width: 4vw;
+    height: 4vw;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .bottom-card:last-child {
+    margin-right: 0;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1vw;
+  }
+
+  .input-container label {
+    margin-right: 1vw;
+    font-size: 1.2vw;
+    font-family: system-ui;
+    font-weight: 600;
+    width: 30%;
+  }
+
+  .input-container input {
+    font-weight: 600;
+    flex: 1;
+    border: none;
+    padding: 0.5vw 2vw;
+    border-radius: 2vw;
+    font-size: 1.2vw;
+    background: none;
+    border: 2px solid blue;
+  }
+
+  .name {
+    text-align: center;
+    margin-right: 1vw;
+    font-size: 1.2vw;
+    font-family: system-ui;
+    font-weight: 600;
+  }
+
+  .number-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 5vw;
+  }
+
+  .number {
+    margin-right: 1vw;
+    font-size: 1.2vw;
+    font-family: system-ui;
+    font-weight: 600;
+  }
+
+  .total {
+    font-size: 1.2vw;
+    padding-left: 15vw;
+    margin-right: 1vw;
+    font-family: system-ui;
+    font-weight: 600;
+  }
+
+  .div h1{
+    
+  }
+
+@media only screen and (max-width: 800px) {
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+margin: 0;
+background-color: #ffffff;
+font-size: 2vw; /* Adjusted base font size */
+}
+
+.main-card {
+width: 90%;
+max-width: 800px; /* Limiting maximum width for larger screens */
+padding: 2%;
+background-color: #ffffff;
+border-radius: 1vw;
+box-shadow: 0.3vw 1vw 2vw rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+margin-bottom: 2%;
+}
+
+.top-cards {
+flex-direction: column;
+display: flex;
+height: auto;
+margin-bottom: 2%;
+}
+
+.left-card,
+.right-card {
+width: 100%;
+margin-right: 0;
+margin-bottom: 3%;
+box-shadow: 0.3vw 1vw 2vw rgba(0, 0, 0, 0.1);
+border-radius: 1vw;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+gap: 2%;
+padding: 2%;
+}
+
+.right-card {
+justify-content: space-between;
+}
+
+.bottom-cards {
+flex-direction: column;
+display: flex;
+height: auto;
+}
+
+.bottom-card {
+width: 100%;
+background-color: #eeeeee;
+border-radius: 1vw;
+margin-bottom: 3%;
+box-shadow: 0.3vw 1vw 2vw rgba(0, 0, 0, 0.1);
+padding: 2%;
+}
+
+.bottom-card p {
+text-align: start;
+    font-size: 5vw;
+    font-weight: 400;
+    margin: 4%;
+    font-family: system-ui;
+}
+
+.bottom-card .div {
+display: flex;
+align-items: center;
+gap: 2%;
+padding-left: 2%;
+}
+
+.div .imgbox {
+width: 6vw; /* Adjusted image box size */
+height: 6vw; /* Adjusted image box size */
+background-color: #fff;
+border-radius: 50%;
+}
+
+.input-container {
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2%;
+    gap: 6vw;
+}
+
+ .input-container label {
+    margin-right: 0%;
+    font-size: 6vw;
+    font-family: system-ui;
+    font-weight: 600;
+    text-align: center;
+}
+
+  .input-container input {
+    font-weight: 600;
+    flex: 1;
+    border: none;
+    padding: 3.5vw;
+    border-radius: 1.5vw;
+    font-size: 5vw;
+    background: none;
+    border: 0.3vw solid blue;
+    width: 90%;
+}
+
+.name,
+.number,
+.total {
+font-size: 2vw; /* Adjusted font size */
+font-family: system-ui;
+font-weight: 600;
+text-align: center;
+margin-right: 2%;
+}
+
+.number-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+gap: 4vw; /* Adjusted gap */
+}
+
+.div .imgbox {
+width: 15vw; /* Adjusted image box size */
+height: 15vw; /* Adjusted image box size */
+}
+
+.div h1{
+font-size: 1.2vw;
+font-family: system-ui;
+}
+}
+
+
+
+
