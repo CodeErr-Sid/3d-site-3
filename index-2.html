@@ -175,93 +175,19 @@
 
 
             <div id="content" class="page-content">
-                <div class="section fullscreen light section-d" id="section-h" style="height: 100vh">
-                    <div class="section-background">
-
-                        <div class="nayla-video n-vimeo no-interactions" data-controls="false" data-autoplay="true"
-                            data-muted="true" data-loop="true" data-src="../media/desert.mp4" style="height: 100vh">
-                            <div class="n-video" data-plyr-provider="vimeo" data-plyr-embed-id="976193089"></div>
-                        </div>
-
-
-                    </div>
-                    <div class="wrapper">
-                        <div class="c-col-12"></div>
-                        <div class="c-col-12 self-center">
-
-                            <style>
-                                .custom-font {
-                                    width: 58%;
-                                    margin: 0 auto;
-                                    line-height: 76px;
-                                    font-size: 2.4rem;
-                                    font-weight: bold;
-                                }
-
-                                .fadeText {
-                                    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-                                }
-                            </style>
-
-                            <div class="text-wrapper align-center no-margin" id="fadeSection">
-                                <p class="text-h4 no-margin has-anim-text custom-font  charsUp" data-duration="1"
-                                    id="fadeText">
-                                    No matter how many buildings, foundations, schools and hospitals we raise, all these
-                                    are material entities. The real spirit behind the progress is the human spirit, the
-                                    able man with his intellect and capabilities
-                                    <br>
-                                    - Shiekh Zayed
-                                </p>
-                            </div>
-
-                            <script>
-                                // script.js
-                                // script.js
-                                document.addEventListener('scroll', function () {
-                                    const section = document.getElementById('fadeSection');
-                                    const text = document.getElementById('fadeText');
-                                    const sectionHeight = section.offsetHeight;
-                                    const sectionTop = section.getBoundingClientRect().top;
-                                    const windowHeight = window.innerHeight;
-
-                                    // Calculate opacity
-                                    let opacity = 1 - Math.abs(sectionTop) / windowHeight;
-                                    if (opacity < 0) opacity = 0;
-                                    if (opacity > 1) opacity = 1;
-
-                                    // Apply the opacity and scale to the text
-                                    text.style.opacity = opacity;
-                                    text.style.transform = `scale(${opacity})`;
-                                });
-
-
-                            </script>
-
-                        </div>
-                        <!-- <div class="c-col-6 align-bottom" style="margin-bottom: 30px">
-
-                            <div class="nayla-button underline icon-right scroll-button" data-scroll-to="#sec1"
-                                data-icon="arrow_downward">
-                                <a href="#.">Scroll to Discover</a>
-                            </div>
-
-                        </div>
-                        <div class="c-col-6 align-bottom align-right" style="margin-bottom: 30px">
-
-                            <div class="nayla-button underline icon-right" data-icon="arrow_outward">
-                                <a href="#.">Works</a>
-                            </div>
-
-                        </div> -->
-                    </div>
-                </div>
+                <style>
+                    .custom-css-video video{
+                        filter: brightness(0.5);
+                    }
+                </style>
                 <div id="animPin" class="section fullscreen section-d" id="section-v">
                     <div class="section-background">
 
-                        <div class="nayla-video no-interactions" data-controls="false">
-                            <video autoplay="" playsinline="" muted="" loop="" style="width: 100%;display: block"
+                        <div class="nayla-video no-interactions custom-css-video" data-controls="false">
+                            
+                            <video autoplay="" playsinline="" muted="" loop style="width: 100%;display: block;"
                                 class="n-video">
-                                <source src="media/digital_ag_2.mp4">
+                                <source src="media/Dubai 2040. How will Dubai become the best city to live in.mp4">
                             </video>
                         </div>
 
@@ -283,228 +209,7 @@
                     </div>
                 </div>
 
-                <!-- zarak media code -->
-
-
-                <section class="outer-section-b">
-                    <section class="page-section zarak-blue white inner-section" id="portfolio">
-                        <div class="container">
-
-                            <!-- <div class="mb-100 mb-md-40">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <h2 class="section-caption mb-0 mb-xs-10 black">Portfolio</h2>
-                                    </div>
-                                    <div class="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
-                                        <a href="modern-portfolio.html" class="link-hover-anim align-middle"
-                                            data-link-animate="y">See all projects <i
-                                                class="icon-arrow-right2 size-14"></i></a>
-                                    </div>
-                                </div>
-                                <hr class="white mt-3 mb-0 ">
-                            </div> -->
-
-                            <div class="row">
-                                <div>
-                                    <h3 class="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-                                        <span class="white">
-                                            Selected Works
-                                        </span>
-
-                                    </h3>
-                                </div>
-                            </div>
-
-                            <!-- Portfolio Grid -->
-                            <div class="mb-n100 mb-md-n60 mb-sm-n40">
-
-                                <!-- Portfolio Item -->
-                                <div class="mb-100 mb-md-60 mb-sm-40">
-                                    <div class="row">
-                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20">
-                                            <div class="portfolio-3-image">
-                                                <a href="modern-portfolio-single.html"><img src="images/1_1.jpg"
-                                                        alt="Image Description"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
-                                            <div class="text-center text-md-start">
-                                                <h3 class="portfolio-3-title font-alt mb-md-10">
-                                                    <a href="modern-portfolio-single.html">
-                                                        <span class="white" data-splitting="chars">
-                                                            Medium Scene
-                                                        </span>
-                                                    </a>
-                                                </h3>
-                                                <div class="portfolio-3-descr">
-                                                    Branding, Design
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Portfolio Item -->
-
-                                <!-- Portfolio Item -->
-                                <div class="mb-100 mb-md-60 mb-sm-40">
-                                    <div class="row">
-                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
-                                            <div class="text-center text-md-end">
-                                                <h3 class="portfolio-3-title font-alt mb-md-10">
-                                                    <a href="modern-portfolio-single.html">
-                                                        <span class="white" data-splitting="chars">
-                                                            The Rise of Design
-                                                        </span>
-                                                    </a>
-                                                </h3>
-                                                <div class="portfolio-3-descr">
-                                                    Branding, Design
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20 order-first order-md-last">
-                                            <div class="portfolio-3-image">
-                                                <a href="modern-portfolio-single.html"><img src="images/2_1.jpg"
-                                                        alt="Image Description"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Portfolio Item -->
-
-                                <!-- Portfolio Item -->
-                                <div class="mb-100 mb-md-60 mb-sm-40">
-                                    <div class="row">
-                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20">
-                                            <div class="portfolio-3-image">
-                                                <a href="modern-portfolio-single.html"><img src="images/3_1.jpg"
-                                                        alt="Image Description"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
-                                            <div class="text-center text-md-start">
-                                                <h3 class="portfolio-3-title font-alt mb-md-10">
-                                                    <a href="modern-portfolio-single.html">
-                                                        <span class="white" data-splitting="chars">
-                                                            Visual Stranger
-                                                        </span>
-                                                    </a>
-                                                </h3>
-                                                <div class="portfolio-3-descr">
-                                                    Branding, Design, Development
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Portfolio Item -->
-
-                                <!-- Portfolio Item -->
-                                <div class="mb-100 mb-md-60 mb-sm-40">
-                                    <div class="row">
-                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
-                                            <div class="text-center text-md-end">
-                                                <h3 class="portfolio-3-title font-alt mb-md-10">
-                                                    <a href="modern-portfolio-single.html">
-                                                        <span class="white" data-splitting="chars">
-                                                            Amplitude Studios
-                                                        </span>
-                                                    </a>
-                                                </h3>
-                                                <div class="portfolio-3-descr">
-                                                    Branding, Design
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20 order-first order-md-last">
-                                            <div class="portfolio-3-image">
-                                                <a href="modern-portfolio-single.html"><img src="images/4_1.jpg"
-                                                        alt="Image Description"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Portfolio Item -->
-
-                                <!-- Portfolio Item -->
-                                <div class="mb-100 mb-md-60 mb-sm-40">
-                                    <div class="row">
-                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20">
-                                            <div class="portfolio-3-image">
-                                                <a href="modern-portfolio-single.html"><img src="images/5_1.jpg"
-                                                        alt="Image Description"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
-                                            <div class="text-center text-md-start">
-                                                <h3 class="portfolio-3-title font-alt mb-md-10">
-                                                    <a href="modern-portfolio-single.html">
-                                                        <span class="white" data-splitting="chars">
-                                                            Super Awards
-                                                        </span>
-                                                    </a>
-                                                </h3>
-                                                <div class="portfolio-3-descr">
-                                                    Design, Development
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Portfolio Item -->
-
-                            </div>
-                            <!-- End Portfolio Grid -->
-
-                        </div>
-                    </section>
-                </section>
-                <!-- End Portfolio Section -->
-
-                <!-- our clients section -->
-
-                <section class="outer-section-b">
-                    <section class="inner-section bg-white">
-                        <div class="page-section container col-xxl-8 px-4 py-5">
-                            <div class="row  align-items-center g-5 py-5 px-4">
-
-                                <div class="col-lg-5 zm-c-content">
-                                    <h1 class="display-4 fw-bold lh-1 mb-3 zm-client-heading reveal-type"
-                                        data-bg-color="gray" data-fg-color="#0C2544">
-                                        We Build Best <br> Design for your <br>
-                                        company
-                                    </h1>
-                                    <div class="zm-c-blue-line"></div>
-                                    <p class="lead">Quickly design and customize responsive mobile-first sites with
-                                        Bootstrap,
-                                        the world’s
-                                        most popular front-end open source toolkit</p>
-                                </div>
-                                <div class="col-11 col-lg-7 c-logo">
-                                    <div class="row c-row">
-                                        <div class="col-sm c-row-item "><img src="images/c-hilti.png" alt=""></div>
-                                        <div class="col-sm c-row-item "><img src="images/c-jashanmal-1024x241.png"
-                                                alt="">
-                                        </div>
-                                        <div class="col-sm c-row-item "><img src="images/c-sc.png" alt=""></div>
-                                    </div>
-                                    <div class="row c-row">
-                                        <div class="col-sm c-row-item "><img src="images/c-sharaf-dg.png" alt=""></div>
-                                        <div class="col-sm c-row-item "><img src="images/c-rmf.png" alt=""></div>
-                                        <div class="col-sm c-row-item "><img src="images/c-predator.png" alt=""></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-
-                <!-- our clients section -->
-
-                <!-- Contact Section -->
-
-                <!-- zarak media code -->
-
+                
                 <div class="section">
                     <!-- <div class="wrapper">
                         <div class="c-col-2 sm-12">
@@ -996,6 +701,229 @@
 
                     </div>
                 </div>
+
+
+                <!-- zarak media code -->
+
+
+                <section class="outer-section-w">
+                    <section class="page-section zarak-blue white inner-section" id="portfolio">
+                        <div class="container">
+
+                            <!-- <div class="mb-100 mb-md-40">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h2 class="section-caption mb-0 mb-xs-10 black">Portfolio</h2>
+                                    </div>
+                                    <div class="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
+                                        <a href="modern-portfolio.html" class="link-hover-anim align-middle"
+                                            data-link-animate="y">See all projects <i
+                                                class="icon-arrow-right2 size-14"></i></a>
+                                    </div>
+                                </div>
+                                <hr class="white mt-3 mb-0 ">
+                            </div> -->
+
+                            <div class="row">
+                                <div>
+                                    <h3 class="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
+                                        <span class="white">
+                                            Selected Works
+                                        </span>
+
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Grid -->
+                            <div class="mb-n100 mb-md-n60 mb-sm-n40">
+
+                                <!-- Portfolio Item -->
+                                <div class="mb-100 mb-md-60 mb-sm-40">
+                                    <div class="row">
+                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20">
+                                            <div class="portfolio-3-image">
+                                                <a href="modern-portfolio-single.html"><img src="images/1_1.jpg"
+                                                        alt="Image Description"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
+                                            <div class="text-center text-md-start">
+                                                <h3 class="portfolio-3-title font-alt mb-md-10">
+                                                    <a href="modern-portfolio-single.html">
+                                                        <span class="white" data-splitting="chars">
+                                                            Medium Scene
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <div class="portfolio-3-descr">
+                                                    Branding, Design
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Portfolio Item -->
+
+                                <!-- Portfolio Item -->
+                                <div class="mb-100 mb-md-60 mb-sm-40">
+                                    <div class="row">
+                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
+                                            <div class="text-center text-md-end">
+                                                <h3 class="portfolio-3-title font-alt mb-md-10">
+                                                    <a href="modern-portfolio-single.html">
+                                                        <span class="white" data-splitting="chars">
+                                                            The Rise of Design
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <div class="portfolio-3-descr">
+                                                    Branding, Design
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20 order-first order-md-last">
+                                            <div class="portfolio-3-image">
+                                                <a href="modern-portfolio-single.html"><img src="images/2_1.jpg"
+                                                        alt="Image Description"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Portfolio Item -->
+
+                                <!-- Portfolio Item -->
+                                <div class="mb-100 mb-md-60 mb-sm-40">
+                                    <div class="row">
+                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20">
+                                            <div class="portfolio-3-image">
+                                                <a href="modern-portfolio-single.html"><img src="images/3_1.jpg"
+                                                        alt="Image Description"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
+                                            <div class="text-center text-md-start">
+                                                <h3 class="portfolio-3-title font-alt mb-md-10">
+                                                    <a href="modern-portfolio-single.html">
+                                                        <span class="white" data-splitting="chars">
+                                                            Visual Stranger
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <div class="portfolio-3-descr">
+                                                    Branding, Design, Development
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Portfolio Item -->
+
+                                <!-- Portfolio Item -->
+                                <div class="mb-100 mb-md-60 mb-sm-40">
+                                    <div class="row">
+                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
+                                            <div class="text-center text-md-end">
+                                                <h3 class="portfolio-3-title font-alt mb-md-10">
+                                                    <a href="modern-portfolio-single.html">
+                                                        <span class="white" data-splitting="chars">
+                                                            Amplitude Studios
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <div class="portfolio-3-descr">
+                                                    Branding, Design
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20 order-first order-md-last">
+                                            <div class="portfolio-3-image">
+                                                <a href="modern-portfolio-single.html"><img src="images/4_1.jpg"
+                                                        alt="Image Description"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Portfolio Item -->
+
+                                <!-- Portfolio Item -->
+                                <div class="mb-100 mb-md-60 mb-sm-40">
+                                    <div class="row">
+                                        <div class="col-md-7 col-lg-8 mb-sm-30 mb-xs-20">
+                                            <div class="portfolio-3-image">
+                                                <a href="modern-portfolio-single.html"><img src="images/5_1.jpg"
+                                                        alt="Image Description"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-lg-4 d-md-flex align-items-end">
+                                            <div class="text-center text-md-start">
+                                                <h3 class="portfolio-3-title font-alt mb-md-10">
+                                                    <a href="modern-portfolio-single.html">
+                                                        <span class="white" data-splitting="chars">
+                                                            Super Awards
+                                                        </span>
+                                                    </a>
+                                                </h3>
+                                                <div class="portfolio-3-descr">
+                                                    Design, Development
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Portfolio Item -->
+
+                            </div>
+                            <!-- End Portfolio Grid -->
+
+                        </div>
+                    </section>
+                </section>
+                <!-- End Portfolio Section -->
+
+                <!-- our clients section -->
+
+                <section class="outer-section-b">
+                    <section class="inner-section bg-white">
+                        <div class="page-section container col-xxl-8 px-4 py-5">
+                            <div class="row  align-items-center g-5 py-5 px-4">
+
+                                <div class="col-lg-5 zm-c-content">
+                                    <h1 class="display-4 fw-bold lh-1 mb-3 zm-client-heading reveal-type"
+                                        data-bg-color="gray" data-fg-color="#0C2544">
+                                        We Build Best <br> Design for your <br>
+                                        company
+                                    </h1>
+                                    <div class="zm-c-blue-line"></div>
+                                    <p class="lead">Quickly design and customize responsive mobile-first sites with
+                                        Bootstrap,
+                                        the world’s
+                                        most popular front-end open source toolkit</p>
+                                </div>
+                                <div class="col-11 col-lg-7 c-logo">
+                                    <div class="row c-row">
+                                        <div class="col-sm c-row-item "><img src="images/c-hilti.png" alt=""></div>
+                                        <div class="col-sm c-row-item "><img src="images/c-jashanmal-1024x241.png"
+                                                alt="">
+                                        </div>
+                                        <div class="col-sm c-row-item "><img src="images/c-sc.png" alt=""></div>
+                                    </div>
+                                    <div class="row c-row">
+                                        <div class="col-sm c-row-item "><img src="images/c-sharaf-dg.png" alt=""></div>
+                                        <div class="col-sm c-row-item "><img src="images/c-rmf.png" alt=""></div>
+                                        <div class="col-sm c-row-item "><img src="images/c-predator.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- our clients section -->
+
+                <!-- Contact Section -->
+
+                <!-- zarak media code -->
 
                 <!-- zarak-contact -->
                 <section class="outer-section-w">
