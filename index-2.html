@@ -176,7 +176,7 @@
 
             <div id="content" class="page-content">
                 <style>
-                    .custom-css-video video{
+                    .custom-css-video video {
                         filter: brightness(0.5);
                     }
                 </style>
@@ -184,7 +184,7 @@
                     <div class="section-background">
 
                         <div class="nayla-video no-interactions custom-css-video" data-controls="false">
-                            
+
                             <video autoplay="" playsinline="" muted="" loop style="width: 100%;display: block;"
                                 class="n-video">
                                 <source src="media/Dubai 2040. How will Dubai become the best city to live in.mp4">
@@ -209,7 +209,302 @@
                     </div>
                 </div>
 
-                
+
+                <!-- siddique code -->
+
+                <style>
+                    body {
+                        margin: 0;
+                        font-family: Arial, sans-serif;
+                    }
+
+                    .sid-container {
+                        height: 75vh;
+                        /* Changed from 100vh to 75vh */
+                        /*     padding: 20px; */
+                        /*     border-radius: 10px; */
+                        background: none;
+                        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+                        /* margin: 50px auto; */
+                        overflow: hidden;
+                    }
+
+                    .sid-container.sticky {
+                        position: sticky;
+                        top: 0;
+                    }
+
+                    .sid-section {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        transition: opacity 1s ease, transform 1s ease;
+                        opacity: 0;
+                        transform: translateY(0);
+                        overflow: auto;
+                        /* Enable scrolling within sections */
+                    }
+
+                    .sid-section::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .sid-section.active {
+                        opacity: 1;
+                        z-index: 1;
+                    }
+
+                    .sid-section.show {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+
+                    .content {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        height: 100%;
+                        transition: transform 2s ease;
+                    }
+
+                    .content.left {
+                        background-color: #d4d3ff;
+                        padding: 20px;
+                        transform: translateY(-100%);
+                    }
+
+                    .content.right {
+                        transform: translateY(100%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                    }
+
+                    .sid-section.active .content.left,
+                    .sid-section.show .content.left {
+                        transform: translateY(0);
+                    }
+
+                    .sid-section.active .content.right,
+                    .sid-section.show .content.right {
+                        transform: translateY(0);
+                    }
+
+                    .content.right img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 0 10px 10px 0;
+                    }
+
+                    a {
+                        margin-top: 20px;
+                        text-decoration: none;
+                        color: #000;
+                        border: 1px solid #000;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        transition: background 0.3s;
+                    }
+
+                    a:hover {
+                        background: #000;
+                        color: #fff;
+                    }
+
+                    .content.left {
+                        background-color: #d4d3ff;
+                        padding: 20px;
+                        transform: translateY(-100%);
+                        transition: transform 1s ease;
+                    }
+
+                    .content.right {
+                        transform: translateY(100%);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        transition: transform 1s ease;
+                    }
+
+                    .sid-section.active .content.left,
+                    .sid-section.show .content.left {
+                        transform: translateY(0);
+                    }
+
+                    .sid-section.active .content.right,
+                    .sid-section.show .content.right {
+                        transform: translateY(0);
+                    }
+                </style>
+
+                <section class="sid-scroll">
+                    <div class="sid-container">
+                        <div class="sid-section" data-index="0">
+                            <div class="content left" style="background-color: pink;">
+                                <h2>Irene Etzkorn</h2>
+                                <p>There is no such thing as a boring project</p>
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="content right">
+                                <img src="your-image.jpg" alt="Model">
+                            </div>
+                        </div>
+                        <div class="sid-section" data-index="1">
+                            <div class="content left">
+                                <h2>Irene Etzkorn</h2>
+                                <p>There is no such thing as a boring project</p>
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="content right">
+                                <img src="your-image2.jpg" alt="Model">
+                            </div>
+                        </div>
+                        <div class="sid-section" data-index="2">
+                            <div class="content left" style="background-color: lightgreen;">
+                                <h2>Irene Etzkorn</h2>
+                                <p>There is no such thing as a boring project</p>
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="content right">
+                                <img src="your-image3.jpg" alt="Model">
+                            </div>
+                        </div>
+                        <div class="sid-section" data-index="3">
+                            <div class="content left" style="background-color: lightseagreen;">
+                                <h2>Irene Etzkorn</h2>
+                                <p>There is no such thing as a boring project</p>
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="content right">
+                                <img src="your-image4.jpg" alt="Model">
+                            </div>
+                        </div>
+                        <div class="sid-section" data-index="4">
+                            <div class="content left" style="background-color: lightsalmon">
+                                <h2>Irene Etzkorn</h2>
+                                <p>There is no such thing as a boring project</p>
+                                <a href="#">Read More</a>
+                            </div>
+                            <div class="content right">
+                                <img src="your-image5.jpg" alt="Model">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const sections = document.querySelectorAll('.sid-section');
+                        const container = document.querySelector('.sid-container');
+                        let currentSection = 0;
+                        let isScrolling = false;
+                        let debounceTimer;
+
+                        function activateSection(index) {
+                            sections.forEach((section, i) => {
+                                if (i < index) {
+                                    section.classList.add('show');
+                                    section.classList.remove('active');
+                                } else if (i === index) {
+                                    section.classList.add('active');
+                                    section.classList.remove('show');
+                                } else {
+                                    section.classList.remove('active', 'show');
+                                }
+                            });
+
+                            // Sticky container behavior
+                            if (index === sections.length - 1) {
+                                container.classList.add('sticky');
+                            } else {
+                                container.classList.remove('sticky');
+                            }
+                        }
+
+
+                        function animateContentOnScroll(direction) {
+                            const leftContent = sections[currentSection].querySelector('.content.left');
+                            const rightContent = sections[currentSection].querySelector('.content.right');
+
+                            // Reset transitions
+                            leftContent.style.transition = 'none'; // Disable transition temporarily
+                            rightContent.style.transition = 'none';
+
+                            // Trigger reflow (force browser to repaint)
+                            leftContent.offsetHeight;
+                            rightContent.offsetHeight;
+
+                            // Apply transitions
+                            leftContent.style.transition = 'transform 1s ease';
+                            rightContent.style.transition = 'transform 1s ease';
+
+                            // Animate left content
+                            if (direction === 'down') {
+                                leftContent.style.transform = 'translateY(0)';
+                            } else if (direction === 'up' && currentSection > 0) {
+                                leftContent.style.transform = 'translateY(-100%)';
+                            }
+
+                            // Animate right content
+                            if (direction === 'down') {
+                                rightContent.style.transform = 'translateY(0)';
+                            } else if (direction === 'up' && currentSection > 0) {
+                                rightContent.style.transform = 'translateY(100%)';
+                            }
+                        }
+
+                        function onScroll(e) {
+                            clearTimeout(debounceTimer);
+                            debounceTimer = setTimeout(() => {
+                                if (isScrolling) return;
+
+                                if ((e.deltaY > 0 || e.keyCode === 40) && currentSection < sections.length - 1) {
+                                    currentSection++;
+                                    isScrolling = true;
+                                    animateContentOnScroll('down');
+                                    activateSection(currentSection);
+                                    setTimeout(() => { isScrolling = false; }, 1000);
+                                } else if ((e.deltaY < 0 || e.keyCode === 38) && currentSection > 0) {
+                                    currentSection--;
+                                    isScrolling = true;
+                                    animateContentOnScroll('up');
+                                    activateSection(currentSection);
+                                    setTimeout(() => { isScrolling = false; }, 1000);
+                                }
+                            }, 50); // Adjust the debounce delay as needed
+                        }
+
+                        function preventScrollBeyondSections(e) {
+                            if ((e.deltaY > 0 || e.keyCode === 40) && currentSection === sections.length - 1) {
+                                e.preventDefault();
+                            } else if ((e.deltaY < 0 || e.keyCode === 38) && currentSection === 0) {
+                                e.preventDefault();
+                            }
+                        }
+
+                        window.addEventListener('wheel', onScroll);
+                        window.addEventListener('keydown', onScroll);
+                        window.addEventListener('wheel', preventScrollBeyondSections, { passive: false });
+                        window.addEventListener('keydown', preventScrollBeyondSections, { passive: false });
+
+                        activateSection(currentSection);
+                    });
+
+                </script>
+
+
+                <!-- siddique code -->
+
+                <!-- what we do -->
                 <div class="section">
                     <!-- <div class="wrapper">
                         <div class="c-col-2 sm-12">
@@ -702,6 +997,7 @@
                     </div>
                 </div>
 
+                <!-- what we do -->
 
                 <!-- zarak media code -->
 
