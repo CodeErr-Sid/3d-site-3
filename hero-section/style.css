@@ -54,9 +54,21 @@ a {
 .content-center {
   height: 100%;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.content-sheikzayed{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.content-sheikzayed p{
+  color: var(--zarak-blue);
 }
 
 .background-video {
@@ -92,7 +104,8 @@ a {
 
 .content-theme-dark p,
 .content-theme-dark a {
-  color: #fea98d;
+  color: var(--zarak-blue);
+  font-size: 1rem;
 }
 .content-theme-light h4 {
   color: white;

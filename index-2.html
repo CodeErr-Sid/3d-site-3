@@ -75,14 +75,25 @@
                 <div class="menu">
                     <i class="fa-solid fa-bars"></i>
                 </div>
+                <style>
+
+                </style>
                 <section class="section bottom-section">
                     <div class="content-container content-theme-dark">
                         <div class="content-inner">
                             <div class="content-center">
                                 <video class="background-video" id="myVideo" autoplay muted loop>
                                     <source src="hero-section/videos/video1.mp4" type="video/webm" />
-                                    Your browser does not support the video tag.
                                 </video>
+                                <div class="content-sheikzayed">
+                                    <p>
+                                        Future generations will be living in a world that is very different from that to
+                                        which we are accustomed. It is essential that we prepare ourselves and our
+                                        children for that new world.
+                                    </p>
+                                    <div style="text-align: right;color: var(--zarak-blue);font-size: 1rem;">-Sheik
+                                        Zayed</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1275,20 +1286,41 @@
                                             <div class="row mb-30">
                                                 <div class="col-lg-6 mb-md-30">
                                                     <!-- Name -->
-                                                    <label for="name" class="visually-hidden">Name</label>
+                                                    <label for="name" class="visually-hidden">First Name</label>
                                                     <input type="text" name="name" id="name"
                                                         class="input-lg input-circle form-control border-white"
-                                                        placeholder="Name" pattern=".{3,100}" required=""
+                                                        placeholder="First Name" pattern=".{3,100}" required=""
                                                         aria-required="true">
                                                     <!-- End Name -->
                                                 </div>
 
-                                                <div class="col-lg-6">
+                                                <div class="col-lg-6 mb-md-30">
+                                                    <!-- Name -->
+                                                    <label for="name" class="visually-hidden">First Name</label>
+                                                    <input type="text" name="name" id="name"
+                                                        class="input-lg input-circle form-control border-white"
+                                                        placeholder="Last Name" pattern=".{3,100}" required=""
+                                                        aria-required="true">
+                                                    <!-- End Name -->
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-30">
+                                                <div class="col-lg-6 mb-md-30">
                                                     <!-- Email -->
                                                     <label for="email" class="visually-hidden">Email</label>
                                                     <input type="email" name="email" id="email"
                                                         class="input-lg input-circle form-control border-white"
                                                         placeholder="Email" pattern=".{5,100}" required=""
+                                                        aria-required="true">
+                                                    <!-- End Email -->
+                                                </div>
+                                                <div class="col-lg-6 mb-md-30">
+                                                    <!-- Email -->
+                                                    <label for="email" class="visually-hidden">Phone Number</label>
+                                                    <input type="email" name="email" id="email"
+                                                        class="input-lg input-circle form-control border-white"
+                                                        placeholder="Phone Number" pattern=".{5,100}" required=""
                                                         aria-required="true">
                                                     <!-- End Email -->
                                                 </div>
@@ -1307,9 +1339,8 @@
 
                                                 <div class="col-xs-4 col-lg-6 mb-md-30">
                                                     <!-- Send Button -->
-                                                    <button class="submit_btn"
-                                                        data-btn-animate="ellipse" id="submit_btn"
-                                                        aria-controls="result">Send Message</button>
+                                                    <button class="submit_btn" data-btn-animate="ellipse"
+                                                        id="submit_btn" aria-controls="result">Send Message</button>
                                                 </div>
 
                                                 <div class="col-xs-8 col-lg-6 d-flex align-items-center">
