@@ -274,6 +274,10 @@ border-radius: 50%;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  border-top-right-radius: 3rem !important;
+  border-top-left-radius: 3rem !important;
+  z-index: 99999;
 }
 
 .name,
