@@ -354,6 +354,15 @@ video {
 
 .white {
     color: #fff !important;
+    font-size: 3rem;
+}
+.hs-descr{
+    font-size: 1.5rem;
+    width: 500px;
+}
+
+.display-4{
+    font-size: 2.5rem!important;
 }
 
 .black {

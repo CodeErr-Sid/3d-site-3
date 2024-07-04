@@ -5,6 +5,7 @@
     height: 100vh;
     margin: 0;
     background-color: #ffffff;
+
   }
 
   .main-card {
@@ -111,7 +112,7 @@
     border-radius: 2vw;
     font-size: 1.2vw;
     background: none;
-    border: 2px solid blue;
+    
   }
 
   .name {
@@ -251,17 +252,24 @@ border-radius: 50%;
     text-align: center;
 }
 
-  .input-container input {
-    font-weight: 600;
-    flex: 1;
-    border: none;
-    padding: 3.5vw;
-    border-radius: 1.5vw;
-    font-size: 5vw;
-    background: none;
-    border: 0.3vw solid blue;
-    width: 90%;
+ 
+.input-container input {
+  font-weight: 600;
+  flex: 1;
+  border: none;
+  padding: 3.5vw;
+  border-radius: 1.5vw;
+  font-size: 5vw;
+  background: white;
+  border: solid 1px rgba(0, 0, 0, 1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5)!important;
+
 }
+.input-container input:hover{
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+
 
 .name,
 .number,
@@ -287,7 +295,7 @@ height: 15vw; /* Adjusted image box size */
 }
 
 .div h1{
-font-size: 1.2vw;
+font-size: 20px !important;
 font-family: system-ui;
 }
 }

@@ -3079,10 +3079,13 @@ span.new__page {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    cursor: pointer
+    cursor: pointer;
+    font-size: 40px !important;
+   
 }
 
 .product-detail-tabs>div .tab-title.active {
+    font-size: 40px !important;
     opacity: 1
 }
 
